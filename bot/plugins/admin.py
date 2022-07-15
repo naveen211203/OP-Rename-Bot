@@ -1,4 +1,4 @@
-# (c) @Aadhi000
+# (c) @Tgbots_tech
 
 import shutil
 import psutil
