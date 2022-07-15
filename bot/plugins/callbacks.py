@@ -1,4 +1,4 @@
-# (c) @Aadhi000
+# (c) @Tgbots_tech
 
 from pyrogram import types
 from bot.client import Client
@@ -103,7 +103,7 @@ async def cb_handlers(c: Client, cb: "types.CallbackQuery"):
     elif cb.data == "showFileInfo":
         replied_m = cb.message.reply_to_message
         _file_name = get_media_file_name(replied_m)
-        text = f"**𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :** `{_file_name}`\n\n" \
+        text = f"**𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :** `@Telugu_movieclub {_file_name}`\n\n" \
                f"**𝙵𝙸𝙻𝙴 𝙴𝚇𝚃𝙴𝙽𝚂𝙸𝙾𝙽 :** `{_file_name.rsplit('.', 1)[-1].upper()}`\n\n" \
                f"**𝙵𝙸𝙻𝙴 𝚃𝚈𝙿𝙴 :** `{get_file_type(replied_m).upper()}`\n\n" \
                f"**𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴 :** `{humanbytes(get_media_file_size(replied_m))}`\n\n" \
